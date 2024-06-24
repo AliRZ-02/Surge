@@ -18,7 +18,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if os(macOS)
+
 import Accelerate
+#else
+
+#if canImport(COpenBlas)
+
+import COpenBlas
+#else
+
+import COpenBlas86_64
+#endif
+
+private typealias __CLPK_integer = Int32
+private typealias __CLPK_doublereal = Double
+#endif
 
 // MARK: - Sum
 

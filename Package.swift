@@ -30,10 +30,13 @@ let package = Package(
             targets: ["Surge"]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/CooperCorona/COpenBlas.git", .upToNextMajor(from: "1.0.0")),
+    ],
     targets: [
         .target(
             name: "Surge",
-            dependencies: []
+            dependencies: [.product(name: "COpenBlas", package: "COpenBlas")]
         ),
         .testTarget(
             name: "SurgeTests",

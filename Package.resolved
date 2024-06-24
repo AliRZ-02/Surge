@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "COpenBlas",
+        "repositoryURL": "https://github.com/CooperCorona/COpenBlas.git",
+        "state": {
+          "branch": null,
+          "revision": "0a17e5cd39159120313092b8614dde1186855146",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
