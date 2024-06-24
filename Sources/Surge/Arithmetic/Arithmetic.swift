@@ -23,6 +23,8 @@
 import Accelerate
 #else
 
+import Foundation
+
 #if canImport(COpenBlas)
 
 import COpenBlas

@@ -180,6 +180,16 @@ func vvatanhf(
     }
 }
 
+func vvacosh(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = acosh(__X[Int(i)]);
+    }
+}
+
 func vvacoshf(
     _ __Y: UnsafeMutablePointer<Float>,
     _ __X: UnsafePointer<Float>,
@@ -190,13 +200,275 @@ func vvacoshf(
     }
 }
 
-func vvacosh(
+func vvasinh(
     _ __Y: UnsafeMutablePointer<Double>,
     _ __X: UnsafePointer<Double>,
     _ __N: UnsafePointer<Int32>
 ) {
     for i in 0 ... __N.pointee - 1 {
-        __Y[Int(i)] = acosh(__X[Int(i)]);
+        __Y[Int(i)] = asinh(__X[Int(i)]);
     }
+}
+
+func vvasinhf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = asinh(__X[Int(i)]);
+    }
+}
+
+func vvtanh(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = tanh(__X[Int(i)]);
+    }
+}
+
+func vvtanhf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = tanh(__X[Int(i)]);
+    }
+}
+
+func vvcosh(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = cosh(__X[Int(i)]);
+    }
+}
+
+func vvcoshf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = cosh(__X[Int(i)]);
+    }
+}
+
+func vvsinh(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = sinh(__X[Int(i)]);
+    }
+}
+
+func vvsinhf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = sinh(__X[Int(i)]);
+    }
+}
+
+func vvatan(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = atan(__X[Int(i)]);
+    }
+}
+
+func vvatanf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = atan(__X[Int(i)]);
+    }
+}
+
+func vvacos(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = acos(__X[Int(i)]);
+    }
+}
+
+func vvacosf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = acos(__X[Int(i)]);
+    }
+}
+
+func vvasin(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = asin(__X[Int(i)]);
+    }
+}
+
+func vvasinf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = asin(__X[Int(i)]);
+    }
+}
+
+func vvsin(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = sin(__X[Int(i)]);
+    }
+}
+
+func vvsinf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = sin(__X[Int(i)]);
+    }
+}
+
+func vvcos(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = cos(__X[Int(i)]);
+    }
+}
+
+func vvcosf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = cos(__X[Int(i)]);
+    }
+}
+
+func vvtan(
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = tan(__X[Int(i)]);
+    }
+}
+
+func vvtanf(
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Y[Int(i)] = tan(__X[Int(i)]);
+    }
+}
+
+func vvsincos(
+    _ __Z: UnsafeMutablePointer<Double>,
+    _ __Y: UnsafeMutablePointer<Double>,
+    _ __X: UnsafePointer<Double>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Z[Int(i)] = sin(__X[Int(i)]);
+        __Y[Int(i)] = cos(__X[Int(i)]);
+    }
+}
+
+func vvsincosf(
+    _ __Z: UnsafeMutablePointer<Float>,
+    _ __Y: UnsafeMutablePointer<Float>,
+    _ __X: UnsafePointer<Float>,
+    _ __N: UnsafePointer<Int32>
+) {
+    for i in 0 ... __N.pointee - 1 {
+        __Z[Int(i)] = sin(__X[Int(i)]);
+        __Y[Int(i)] = cos(__X[Int(i)]);
+    }
+}
+
+func vDSP_measqvD(
+    _ __A: UnsafePointer<Double>,
+    _ __I: vDSP_Stride,
+    _ __C: UnsafeMutablePointer<Double>,
+    _ __N: vDSP_Length
+) {
+    var sum: Double = 0;
+    for i in 0 ... __N - 1 {
+        sum += (__A[Int(i) * __I] * __A[Int(i) * __I]);
+    }
+
+    __C.pointee = (sum / Double(__N))
+}
+
+func vDSP_measqv(
+    _ __A: UnsafePointer<Float>,
+    _ __I: vDSP_Stride,
+    _ __C: UnsafeMutablePointer<Float>,
+    _ __N: vDSP_Length
+) {
+    var sum: Float = 0;
+    for i in 0 ... __N - 1 {
+        sum += (__A[Int(i) * __I] * __A[Int(i) * __I]);
+    }
+
+    __C.pointee = (sum / Float(__N))
+}
+
+func vDSP_rmsqvD(
+    _ __A: UnsafePointer<Double>,
+    _ __IA: vDSP_Stride,
+    _ __C: UnsafeMutablePointer<Double>,
+    _ __N: vDSP_Length
+) {
+    vDSP_measqvD(__A, __IA, __C, __N)
+    __C.pointee = sqrt(__C.pointee)
+}
+
+func vDSP_rmsqv(
+    _ __A: UnsafePointer<Float>,
+    _ __IA: vDSP_Stride,
+    _ __C: UnsafeMutablePointer<Float>,
+    _ __N: vDSP_Length
+) {
+    vDSP_measqv(__A, __IA, __C, __N)
+    __C.pointee = sqrt(__C.pointee)
 }
 #endif
